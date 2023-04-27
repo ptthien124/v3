@@ -1,0 +1,119 @@
+.ant-btn-default {
+  font-weight: 600;
+  border: none;
+  box-shadow: none;
+  color: white;
+
+  &.dark {
+    color: white;
+    background-color: var(--dark-blue);
+
+    &:not(:disabled):hover {
+      color: white;
+      border-color: var(--dark-blue);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        var(--dark-blue);
+    }
+
+    &:disabled {
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)
+        ),
+        var(--dark-blue);
+    }
+  }
+
+  &.primary {
+    color: white;
+    background-color: var(--primary-pink);
+
+    &:not(:disabled):hover {
+      color: white;
+      border-color: var(--primary-pink);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        var(--primary-pink);
+    }
+
+    &:disabled {
+      border-color: var(--primary-pink);
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)
+        ),
+        var(--primary-pink);
+    }
+  }
+
+  &.linkage {
+    color: white;
+    background-color: var(--link);
+
+    &:not(:disabled):hover {
+      color: white;
+      border-color: var(--link);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        var(--link);
+    }
+
+    &:disabled {
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.8)
+        ),
+        var(--link);
+    }
+  }
+
+  &.white {
+    background-color: white;
+    color: var(--primary-pink);
+
+    &:not(:disabled):hover {
+      color: var(--primary-pink);
+      border-color: var(--primary-pink);
+      background: var(--light-pink);
+    }
+
+    &:disabled {
+      color: var(--button-white-disabled-color);
+      background: linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.4),
+          rgba(255, 255, 255, 0.4)
+        ),
+        var(--button-white-disabled);
+    }
+  }
+}
+
+.ant-btn {
+  height: 32px;
+  border-radius: 4px;
+  padding: 0 15px;
+  color: white;
+
+  &.ant-btn-loading {
+    opacity: unset;
+  }
+
+  &.ant-btn-lg {
+    height: 44px;
+    border-radius: 8px;
+    padding: 0 20px;
+  }
+
+  &.ant-btn-sm {
+    font-size: 12px;
+    height: 28px;
+    border-radius: 2px;
+    padding: 0 8px;
+  }
+
+  .ant-btn-loading-icon {
+    display: none;
+  }
+}

@@ -1,0 +1,12 @@
+.ant-form:not(.ant-form-vertical) .ant-form-item .ant-form-item-label {
+  line-height: 36px;
+}
+
+.ant-form-vertical .ant-form-item .ant-form-item-label {
+  line-height: 16px;
+}
+
+.ant-form-item .ant-form-item-label > label {
+  font-weight: 600;
+  color: var(--dark-blue);
+}

@@ -1,0 +1,173 @@
+.ant-input,
+.ant-input-affix-wrapper {
+  font-weight: 500;
+  caret-color: var(--primary-pink);
+  color: var(--dark-blue);
+  border-color: var(--input-border);
+
+  &.ant-input-affix-wrapper-status-success {
+    border-color: var(--input-success);
+  }
+
+  &.ant-input-affix-wrapper-status-warning:not(
+      .ant-input-affix-wrapper-disabled
+    ):not(.ant-input-affix-wrapper-borderless) {
+    border-color: var(--input-warning);
+
+    &.ant-input-affix-wrapper-focused {
+      border-color: var(--warning);
+    }
+  }
+
+  &.ant-input-affix-wrapper-status-error:not(
+      .ant-input-affix-wrapper-disabled
+    ):not(.ant-input-affix-wrapper-borderless) {
+    border-color: var(--input-error);
+
+    &.ant-input-affix-wrapper-focused {
+      border-color: var(--error);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--dark-blue);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--input-shadow);
+  }
+}
+
+.ant-input-disabled,
+.ant-input-disabled:hover,
+.ant-input[disabled],
+.ant-input[disabled]:hover {
+  color: var(--input-border);
+  border-color: var(--input-disabled);
+  background: var(--input-disabled);
+}
+
+.ant-input::placeholder {
+  color: var(--input-border);
+}
+
+.ant-input-status-success:not(.ant-input-disabled):not(
+    .ant-input-borderless
+  ).ant-input,
+.ant-input-affix-wrapper-status-success:not(
+    .ant-input-affix-wrapper-disabled
+  ):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper {
+  background-color: var(--input-success);
+  color: var(--success);
+
+  &:hover {
+    border-color: var(--success);
+  }
+
+  &:focus {
+    border-color: var(--success);
+    box-shadow: 0 0 0 2px var(--success-shadow);
+  }
+
+  &::placeholder {
+    color: var(--success);
+  }
+
+  .ant-input {
+    color: var(--success);
+    background-color: var(--input-success);
+
+    &::placeholder {
+      color: var(--success-placeholder);
+    }
+  }
+}
+
+.ant-input-status-error:not(.ant-input-disabled):not(
+    .ant-input-borderless
+  ).ant-input,
+.ant-input-affix-wrapper-status-error:not(
+    .ant-input-affix-wrapper-disabled
+  ):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper {
+  background-color: var(--input-error);
+  color: var(--error);
+
+  &:hover,
+  &:focus {
+    border-color: var(--error);
+  }
+
+  &::placeholder {
+    color: var(--error);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--error-shadow);
+  }
+
+  .ant-input {
+    color: var(--error);
+    background-color: var(--input-error);
+
+    &::placeholder {
+      color: var(--error-placeholder);
+    }
+  }
+}
+
+.ant-input-status-warning:not(.ant-input-disabled):not(
+    .ant-input-borderless
+  ).ant-input,
+.ant-input-affix-wrapper-status-warning:not(
+    .ant-input-affix-wrapper-disabled
+  ):not(.ant-input-affix-wrapper-borderless).ant-input-affix-wrapper {
+  background-color: var(--input-warning);
+  color: var(--warning);
+
+  &:hover,
+  &:focus {
+    border-color: var(--warning);
+  }
+
+  &::placeholder {
+    color: var(--warning);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--warning-shadow);
+  }
+
+  .ant-input {
+    color: var(--warning);
+    background-color: var(--input-warning);
+
+    &::placeholder {
+      color: var(--warning-placeholder);
+    }
+  }
+}
+
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled) {
+  &:hover {
+    border-color: var(--dark-blue);
+  }
+
+  &:focus {
+    border-color: var(--dark-blue);
+    box-shadow: 0 0 0 2px var(--input-shadow);
+  }
+}
+
+.ant-input-affix-wrapper-focused {
+  border-color: var(--dark-blue);
+
+  &.ant-input-affix-wrapper-status-success {
+    border-color: var(--success);
+  }
+}
+
+.ant-form-item .ant-form-item-label {
+  display: flex;
+  align-items: center;
+}

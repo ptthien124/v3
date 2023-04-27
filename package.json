@@ -1,0 +1,9 @@
+{
+  "name": "amili-v3",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/amili-v3-design",
+    "packages/amili-v3-design-demo"
+  ]
+}

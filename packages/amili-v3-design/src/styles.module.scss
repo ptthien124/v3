@@ -1,0 +1,41 @@
+:root {
+  --dark-blue: #232567;
+
+  --primary-pink: #da2e9a;
+  --light-pink: #fceff7;
+
+  --link: #007ae7;
+
+  --button-white-disabled: #f2eef3;
+  --button-white-disabled-color: rgba(218, 46, 154, 0.4);
+
+  --success: #00ab00;
+  --error: #ff634e;
+  --warning: #ffac00;
+
+  --success-placeholder: rgba(0, 171, 0, 0.4);
+  --warning-placeholder: rgba(255, 172, 0, 0.4);
+  --error-placeholder: rgba(255, 99, 78, 0.4);
+
+  --input-border: #d3d3e1;
+  --input-disabled: #f2eef3;
+  --input-success: #e0f5e0;
+  --input-warning: #fff5e0;
+  --input-error: #ffece9;
+
+  --input-shadow: rgba(204, 228, 250);
+  --success-shadow: rgba(224, 245, 224, 0.4);
+  --error-shadow: rgba(255, 236, 233, 0.4);
+  --warning-shadow: rgba(255, 245, 224, 0.4);
+
+  --modal-border: #eeeef3;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  color: var(--dark-blue);
+}

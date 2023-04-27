@@ -1,0 +1,40 @@
+.ant-modal {
+  color: var(--dark-blue);
+  .ant-modal-header,
+  .ant-modal-footer {
+    margin: 0;
+  }
+
+  .ant-modal-title {
+    color: var(--dark-blue);
+  }
+
+  .ant-modal-body {
+    font-weight: 400;
+  }
+
+  .ant-modal-footer {
+    display: flex;
+    justify-content: end;
+    gap: 24px;
+
+    .ant-btn + .ant-btn:not(.ant-dropdown-trigger) {
+      margin: 0;
+    }
+  }
+
+  .ant-modal-close {
+    top: 28px;
+    inset-inline-end: 22px;
+  }
+
+  .ant-modal-close-x {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    path {
+      fill: var(--primary-pink);
+    }
+  }
+}

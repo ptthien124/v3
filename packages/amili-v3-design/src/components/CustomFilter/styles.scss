@@ -1,0 +1,24 @@
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover
+  .ant-checkbox-inner {
+  border-color: var(--primary-pink);
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--primary-pink);
+  border-color: var(--primary-pink);
+}
+
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover {
+  .ant-checkbox-checked:not(.ant-checkbox-disabled) .ant-checkbox-inner {
+    background-color: var(--primary-pink);
+  }
+}
+
+.ant-checkbox-checked:after {
+  border: 2px solid var(--primary-pink);
+}
+
+.ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover
+  .ant-checkbox-checked:not(.ant-checkbox-disabled):after {
+  border-color: var(--primary-pink);
+}
