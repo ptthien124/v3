@@ -40,6 +40,7 @@ const CustomButton: React.FC<CustomButtonProps> = props => {
   return (
     <CustomButtonWrapper
       {...rest}
+      size={size}
       style={newStyle}
       className={newClassName}
       disabled={disabled}

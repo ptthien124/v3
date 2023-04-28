@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import CustomButton from './components/CustomButton';
-import CustomLeftArrow from './icons/LeftArrow';
-import CustomBell from './icons/Bell';
 import CustomBadge from './components/CustomBadge';
+import CustomButton from './components/CustomButton';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <>
-      <CustomBadge>hello</CustomBadge>
+      <CustomBadge size="large" color="linkage">
+        hello
+      </CustomBadge>
+      <CustomButton type="dark">button</CustomButton>
     </>
   </React.StrictMode>,
 );
