@@ -10,7 +10,7 @@ export const CustomModalWrapper = styled(Modal)`
 
   .ant-modal-header {
     padding: 28px 0;
-    border-bottom: 1px solid var(--modal-border);
+    border-bottom: 1px solid var(--light-gray);
   }
 
   .ant-modal-title {
