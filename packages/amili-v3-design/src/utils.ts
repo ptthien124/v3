@@ -11,3 +11,6 @@ export const createNewWidthHeightStyle = (props: CustomWidthHeightProps) => {
   }
   return result;
 };
+
+export const getCSSVariable = (variable: string) =>
+  getComputedStyle(document.documentElement).getPropertyValue(variable);

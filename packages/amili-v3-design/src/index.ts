@@ -10,6 +10,7 @@ export * from './interfaces/modal';
 export * from './interfaces/input';
 export * from './interfaces/controlledInput';
 export * from './interfaces/filter';
+export * from './interfaces/badge';
 
 export * from './types/button';
 export * from './types/controlledInput';

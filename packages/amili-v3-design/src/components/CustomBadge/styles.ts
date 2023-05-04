@@ -7,81 +7,59 @@ export const CustomBadgeWrapper = styled(Tag)`
   padding: 8px 12px;
 
   border-radius: 22px;
-  border-color: var(--dark-blue);
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  .ant-space-item {
-    font-weight: 600;
-    font-size: 14px;
-  }
+  &.dark {
+    background-color: var(--light-gray);
+    border-color: var(--dark-blue);
 
-  .prefix,
-  .suffix {
-    display: flex;
-    align-items: center;
-
-    svg {
-      height: 14px;
-      width: 14px;
+    .ant-space-item {
+      color: var(--dark-blue);
     }
   }
 
-  &:not(.primary).dark {
-    color: var(--dark-blue);
-    border-color: var(--dark-blue);
-  }
-
-  &:not(.primary).color-primary {
-    color: var(--primary-pink);
+  &.primary {
+    background-color: var(--light-pink);
     border-color: var(--primary-pink);
+
+    .ant-space-item {
+      color: var(--primary-pink);
+    }
   }
 
-  &:not(.primary).linkage {
-    color: var(--link);
+  &.linkage {
+    background-color: var(--light-link);
     border-color: var(--link);
+
+    .ant-space-item {
+      color: var(--link);
+    }
   }
 
   &.large {
     height: 44px;
-    padding: 8px 20px;
 
     .ant-space-item {
       font-size: 16px;
     }
+  }
 
-    .prefix,
-    .suffix {
-      display: flex;
-      align-items: center;
+  &.middle {
+    height: 32px;
 
-      svg {
-        height: 18px;
-        width: 18px;
-      }
+    .ant-space-item {
+      font-size: 14px;
     }
   }
 
   &.small {
-    font-size: 12px;
     height: 28px;
-    padding: 8px;
 
     .ant-space-item {
       font-size: 12px;
-    }
-
-    .prefix,
-    .suffix {
-      display: flex;
-      align-items: center;
-
-      svg {
-        height: 12px;
-        width: 12px;
-      }
     }
   }
 `;

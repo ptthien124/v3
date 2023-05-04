@@ -1,8 +1,8 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import { Filter } from "./Filter";
+import type { Meta, StoryObj } from '@storybook/react';
+import { Filter } from './Filter';
 
 const meta = {
-  title: "Example/Filter",
+  title: 'Example/Filter',
   component: Filter,
 } satisfies Meta<typeof Filter>;
 
@@ -11,15 +11,15 @@ type Story = StoryObj<typeof meta>;
 
 export const Demo: Story = {
   args: {
-    children: "Filters",
+    children: 'Filters',
     options: [
       {
-        value: "1",
-        label: "Option 1",
+        value: '1',
+        label: 'Option 1',
       },
       {
-        value: "2",
-        label: "Option 2",
+        value: '2',
+        label: 'Option 2',
       },
     ],
   },
